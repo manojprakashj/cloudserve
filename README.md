@@ -36,7 +36,7 @@ CloudServe is a single file Python HTTP file server built for pentesters, CTF pl
 | 🔐 | **Read-only mode** | `--readonly` disables all writes |
 | 🔗 | **Copy link** | One-click copy of direct download URL to clipboard |
 | 🖱️ | **Context menu** | Right-click any file or folder for quick actions |
-| 🎲 | **Random port** | Picks a free port automatically — no conflicts, no guessing |
+| 🎲 | **Random port** | Picks a free port automatically no conflicts, no guessing |
 | 📦 | **Single file** | Just `cloudserve.py` + a `templates/` folder. No bloat. |
 
 ---
