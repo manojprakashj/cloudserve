@@ -2,14 +2,6 @@
 # CloudServe installer
 set -e
 
-echo ""
-echo "  ██████╗██╗      ██████╗ ██╗   ██╗██████╗ "
-echo " ██╔════╝██║     ██╔═══██╗██║   ██║██╔══██╗"
-echo " ██║     ██║     ██║   ██║██║   ██║██║  ██║"
-echo " ╚██████╗███████╗╚██████╔╝╚██████╔╝██████╔╝"
-echo "  ╚═════╝╚══════╝ ╚═════╝  ╚═════╝ ╚═════╝ "
-echo ""
-
 echo "[*] Installing Python dependencies..."
 pip install flask werkzeug -q
 
