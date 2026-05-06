@@ -313,8 +313,8 @@ CloudServe is designed for controlled use. Keep these in mind:
 - **Uploads are enabled by default.** Use `--no-upload` or `--readonly` when sharing with untrusted users.
 - **Deletion is disabled by default.** Enable with `--delete` only when necessary.
 - **Cloudflare Quick Tunnels are public.** Always use `--auth` if serving anything sensitive over a tunnel.
-- **Path traversal is prevented** — all paths are resolved and validated against the root directory.
-- **No authentication by default** — add `--auth user:pass` when running on a shared or public network.
+- **Path traversal is prevented**  all paths are resolved and validated against the root directory.
+- **No authentication by default** add `--auth user:pass` when running on a shared or public network.
 - Intended for **local network use, CTF scenarios, and pentest engagements**. Not a production web server.
 
 
