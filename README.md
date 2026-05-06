@@ -229,9 +229,9 @@ All endpoints respect HTTP Basic Auth if `--auth` is set.
 | `GET` | `/download/<path>` | Download a file |
 | `GET` | `/view/<path>` | View a file inline in the browser |
 | `GET` | `/zip/<path>` | Download a directory as `.zip` |
-| `POST` | `/upload` | Upload files — `multipart/form-data`, field: `files[]`, `path` |
-| `POST` | `/delete` | Delete a file or folder — JSON `{"path": "..."}` |
-| `POST` | `/mkdir` | Create a folder — JSON `{"path": "...", "name": "..."}` |
+| `POST` | `/upload` | Upload files `multipart/form-data`, field: `files[]`, `path` |
+| `POST` | `/delete` | Delete a file or folder JSON `{"path": "..."}` |
+| `POST` | `/mkdir` | Create a folder JSON `{"path": "...", "name": "..."}` |
 | `GET` | `/api/status` | Server status as JSON |
 | `GET` | `/api/tunnel/status` | Tunnel status + log as JSON |
 | `POST` | `/api/tunnel/start` | Start the Cloudflare tunnel |
