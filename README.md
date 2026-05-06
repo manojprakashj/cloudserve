@@ -41,6 +41,19 @@ CloudServe is a single file Python HTTP file server built for pentesters, CTF pl
 
 ---
 
+<img width="1482" height="756" alt="image" src="https://github.com/user-attachments/assets/9b7d1ac7-9926-4b7e-a445-8bd23f46bf9d" />
+
+
+<img width="1562" height="873" alt="image" src="https://github.com/user-attachments/assets/4ebb0a75-39e7-47e5-a920-058aa373687d" />
+
+
+<img width="1563" height="866" alt="image" src="https://github.com/user-attachments/assets/f705b111-a9aa-486f-a8da-793f666db4b4" />
+
+
+<img width="1566" height="870" alt="image" src="https://github.com/user-attachments/assets/cdf1cfdb-1ee3-45ae-a961-9f5ca2b8a73a" />
+
+
+
 ## Quick Start
 
 ```bash
