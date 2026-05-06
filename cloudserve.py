@@ -55,9 +55,7 @@ CONFIG = {
     "readonly": False,
 }
 
-# ─────────────────────────────────────────────
-#  Port helpers
-# ─────────────────────────────────────────────
+
 def find_free_port(preferred=None):
     """Return a free TCP port. Try preferred first, else pick random."""
     if preferred:
@@ -73,9 +71,7 @@ def find_free_port(preferred=None):
         s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         return s.getsockname()[1]
 
-# ─────────────────────────────────────────────
-#  Auth
-# ─────────────────────────────────────────────
+
 def check_auth(username, password):
     return username == CONFIG["auth_user"] and password == CONFIG["auth_pass"]
 
@@ -93,9 +89,7 @@ def requires_auth(f):
         return f(*args, **kwargs)
     return decorated
 
-# ─────────────────────────────────────────────
-#  Helpers
-# ─────────────────────────────────────────────
+
 def safe_path(rel_path):
     root = Path(CONFIG["root_dir"]).resolve()
     target = (root / rel_path).resolve()
@@ -154,9 +148,7 @@ def list_directory(rel_path=""):
         "server_port": CONFIG["port"],
     }
 
-# ─────────────────────────────────────────────
-#  Routes
-# ─────────────────────────────────────────────
+
 @app.route("/")
 @requires_auth
 def index():
@@ -264,9 +256,7 @@ def mkdir():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
-# ─────────────────────────────────────────────
-#  Tunnel API
-# ─────────────────────────────────────────────
+
 @app.route("/api/status")
 def api_status():
     return jsonify({
@@ -318,9 +308,7 @@ def _do_start_tunnel():
     if not url:
         CONFIG["tunnel_status"] = "error"
 
-# ─────────────────────────────────────────────
-#  Cloudflare Tunnel
-# ─────────────────────────────────────────────
+
 def find_cloudflared():
     # Check PATH
     for path_dir in os.environ.get("PATH", "").split(os.pathsep):
@@ -464,9 +452,7 @@ def stop_cloudflare_tunnel():
     CONFIG["tunnel_log"].append("[*] Tunnel stopped.")
     print("[*] Tunnel stopped.")
 
-# ─────────────────────────────────────────────
-#  CLI
-# ─────────────────────────────────────────────
+
 def parse_args():
     parser = argparse.ArgumentParser(
         description="CloudServe - File server with Cloudflare tunnel",
