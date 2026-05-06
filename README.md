@@ -16,7 +16,7 @@ A better alternative to `python -m http.server` and `updog`
 
 ## What is CloudServe?
 
-CloudServe is a single-file Python HTTP file server built for pentesters, CTF players, developers, and anyone who needs to quickly share files over a network. It runs on a **random free port by default** (no port conflicts), has a clean white minimal web UI, and can expose itself to the internet in seconds via a **Cloudflare Quick Tunnel** no account, no registration required.
+CloudServe is a single file Python HTTP file server built for pentesters, CTF players, developers, and anyone who needs to quickly share files over a network. It runs on a **random free port by default** (no port conflicts), has a clean white minimal web UI, and can expose itself to the internet in seconds via a **Cloudflare Quick Tunnel** no account, no registration required.
 
 ---
 
