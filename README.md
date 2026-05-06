@@ -1,13 +1,5 @@
 <div align="center">
 
-```
-  ██████╗██╗      ██████╗ ██╗   ██╗██████╗ ███████╗███████╗██████╗ ██╗   ██╗███████╗
- ██╔════╝██║     ██╔═══██╗██║   ██║██╔══██╗██╔════╝██╔════╝██╔══██╗██║   ██║██╔════╝
- ██║     ██║     ██║   ██║██║   ██║██║  ██║███████╗█████╗  ██████╔╝██║   ██║█████╗  
- ██║     ██║     ██║   ██║██║   ██║██║  ██║╚════██║██╔══╝  ██╔══██╗╚██╗ ██╔╝██╔══╝  
- ╚██████╗███████╗╚██████╔╝╚██████╔╝██████╔╝███████║███████╗██║  ██║ ╚████╔╝ ███████╗
-  ╚═════╝╚══════╝ ╚═════╝  ╚═════╝ ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚══════╝
-```
 
 **A modern, hackable file server with Cloudflare Tunnel support**
 
@@ -35,7 +27,7 @@ CloudServe is a single-file Python HTTP file server built for pentesters, CTF pl
 | 📁 | **Directory browsing** | Clean minimal UI with file type icons, sortable columns |
 | ⬆️ | **File upload** | Drag-and-drop anywhere on the page or click to browse, with progress bar |
 | ⬇️ | **File download** | Direct download per file or download entire folder as `.zip` |
-| ☁️ | **Cloudflare Tunnel** | One-click public URL — no account needed, auto-installs `cloudflared` |
+| ☁️ | **Cloudflare Tunnel** | One-click public URL no account needed, auto-installs `cloudflared` |
 | 🎛️ | **Tunnel control panel** | Start / Stop / Restart tunnel live from the browser, with live log viewer |
 | 🔒 | **HTTP Basic Auth** | Protect with `--auth user:pass` |
 | 🔍 | **Live file filter** | Instant client-side search/filter by filename |
@@ -124,7 +116,7 @@ options:
   --tunnel           Start a Cloudflare Quick Tunnel on launch
   --no-upload        Disable file uploads
   --delete           Enable file deletion (disabled by default)
-  --readonly         Read-only mode — disables upload, delete, mkdir
+  --readonly         Read-only mode disables upload, delete, mkdir
   --auth USER:PASS   Protect with HTTP Basic Auth
   --no-browser       Don't auto-open browser on start
 ```
@@ -163,7 +155,7 @@ cloudserve --no-browser /data
 
 ## Cloudflare Tunnel
 
-CloudServe integrates with [Cloudflare Quick Tunnels](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/do-more-with-tunnels/trycloudflare/) — a free service that gives you a public HTTPS URL with **no account, no signup, no configuration**.
+CloudServe integrates with [Cloudflare Quick Tunnels](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/do-more-with-tunnels/trycloudflare/) a free service that gives you a public HTTPS URL with **no account, no signup, no configuration**.
 
 ### How it works
 
@@ -181,18 +173,7 @@ cloudserve --tunnel
 ```
 
 **From the browser:**  
-Click the tunnel pill in the top-right corner → click **Start**
-
-### Tunnel control panel
-
-The web UI includes a full tunnel control panel (click the signal icon in the header):
-
-- 🟢 **Start** — starts a new Quick Tunnel
-- 🟥 **Stop** — terminates the tunnel
-- 🔄 **Restart** — stop + start in one click
-- 📋 **Copy URL** — copies the public URL to clipboard
-- 🔗 **Open** — opens the tunnel URL in a new tab
-- 📜 **Live log** — shows real-time cloudflared output with color coding
+Click the tunnel pill in the top right corner → click **Start**
 
 ### Installing `cloudflared`
 
@@ -216,7 +197,7 @@ CloudServe will attempt to auto-install `cloudflared` on first use. You can also
 - Click a **file** to download it
 - **Breadcrumb** navigation at the top
 - **Sort** by name, size, or date modified
-- **Live filter** — type to filter files instantly
+- **Live filter** type to filter files instantly
 
 ### Upload
 - **Drag and drop** files anywhere on the page
