@@ -1,6 +1,5 @@
 <div align="center">
 
-
 **A modern, hackable file server with Cloudflare Tunnel support**
 
 A better alternative to `python -m http.server` and `updog`
